@@ -1,0 +1,149 @@
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Light cyan background */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+main {
+    display: flex;
+    background-color: #e0f7fa;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 2rem auto;
+    width: 80%; /* Adjust as needed */
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right-column {
+    flex-basis: 20%;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    margin-right: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    color: #1e88e5; /* Light blue color */
+}
+
+.left-column {
+    flex-basis: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.glasspane {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* .glasspane h2 {
+    color: #8e24aa; 
+    margin-bottom: 1rem;
+} */
+
+.glasspane ul li {
+    margin-bottom: 1rem;
+    color: #1e88e5; 
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: #8e24aa; /* Purple color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .right-column, .left-column {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* About Me Section Styling */
+.right-column h2, .right-column h3 {
+    color: #8e24aa; /* Purple color */
+    margin-bottom: 0.5rem;
+}
+
+.right-column p {
+    color: #1e88e5; /* Light blue color */
+}
+
+/* .right-column a {
+    color: #007bff;
+    display: block;
+    margin-bottom: 0.5rem;
+} */
+
+.right-column h3 {
+    margin-top: 1rem;
+}
+
+.right-column p
+/* .right-column a, 
+.right-column h3  */
+{
+    background: rgba(255, 255, 255, 0.5);
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
