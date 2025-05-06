@@ -1,73 +1,85 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    padding: 0;
-    color: #333;
-    line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+  background: #ffffff;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+header p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.socials a {
+  margin: 0 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #4682b4;
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+h2 {
+  color: #4682b4;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+}
+
+.job h3 {
+  font-size: 1.05rem;
+  margin: 10px 0 5px;
+  display: flex;
+  justify-content: space-between;
+  color: #333;
+}
+
+.job ul {
+  padding-left: 18px;
+  margin: 5px 0 10px;
+}
+
+.job ul li {
+  margin-bottom: 6px;
+}
+
+.skills li {
+  margin-bottom: 6px;
+}
+
+a {
+  color: #4682b4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .job h3 {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  header h1 {
-    font-size: 2em;
-    color: #4682b4; /* steel blue */
-    margin-bottom: 5px;
-  }
-  
-  header p {
-    font-size: 0.95em;
-    color: #555;
-  }
-  
-  .links a {
-    margin: 0 8px;
-    text-decoration: none;
-    color: #4682b4;
-    font-weight: 500;
-  }
-  
-  section {
-    margin-bottom: 25px;
-  }
-  
-  h2 {
-    font-size: 1.4em;
-    color: #4682b4;
-    border-bottom: 1px solid #4682b4;
-    padding-bottom: 4px;
-    margin-top: 30px;
-  }
-  
-  h3 {
-    font-size: 1.1em;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: space-between;
-    color: #222;
-  }
-  
-  h3 span {
-    font-weight: normal;
-    font-size: 0.95em;
-    color: #666;
-  }
-  
-  ul {
-    margin-left: 20px;
-    padding-left: 0;
-    list-style: disc;
-  }
-  
-  a {
-    color: #4682b4;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
+}
